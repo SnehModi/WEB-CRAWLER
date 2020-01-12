@@ -1,11 +1,13 @@
 # WEB-CRAWLER
 
+#packages used to run different functions
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+
 url = 'https://www.flipkart.com/laptops/~buyback-guarantee-on-laptops-/pr?sid=6bo%2Cb5g&uniqBStoreParam1=val1&wid=11.productCard.PMU_V2.'
-source_code = requests.get(url)
+source_code = requests.get(url)   #fetching the data of the site
 plain_text = source_code.text
 
 products=[] #List to store name of the product
